@@ -37,16 +37,16 @@ public class driverMain extends AppCompatActivity implements NavigationView.OnNa
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int i=menuItem.getItemId();
         if(i== R.id.nav_vr){
-            Toast.makeText(this,"VIOLATION RECORD SHIT",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"VIOLATION RECORD SHIT",Toast.LENGTH_SHORT).show();
         }
         if(i== R.id.nav_vp){
-            Toast.makeText(this,"penalties SHIT",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"penalties SHIT",Toast.LENGTH_SHORT).show();
         }
         if(i== R.id.nav_inquire){
-            Toast.makeText(this,"INQUIRESHIT",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"INQUIRESHIT",Toast.LENGTH_SHORT).show();
         }
         if(i== R.id.nav_eh){
-            Toast.makeText(this,"emergency shits",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"emergency shits",Toast.LENGTH_SHORT).show();
         }
         return false;
     }
