@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(v.getId() == R.id.btn_driverLogin){
             startActivity(new Intent(this, driverLogin.class));
         }
-        if(v.getId() == R.id.btn_driverLogin){
+        if(v.getId() == R.id.btn_enforcerLogin){
             startActivity(new Intent(this, enforcerLogin.class));
         }
     }

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/driverDrawer"
     tools:context=".driverMain">
 
     <LinearLayout
@@ -24,11 +25,12 @@
     </LinearLayout>
 
     <android.support.design.widget.NavigationView
-        app:headerLayout="@layout/driver_header"
+        android:id="@+id/nav_driver"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@color/white"
+        app:headerLayout="@layout/driver_header"
         app:menu="@menu/driver_menu" />
 
 

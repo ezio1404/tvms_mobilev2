@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">tvms_mobilev2</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
     <string name="title_activity_driver_login">Sign in</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
