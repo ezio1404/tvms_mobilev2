@@ -1,5 +1,6 @@
 package com.tvms_mobilev2;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -37,16 +38,16 @@ public class driverMain extends AppCompatActivity implements NavigationView.OnNa
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int i=menuItem.getItemId();
         if(i== R.id.nav_vr){
-            Toast.makeText(this,"VIOLATION RECORD SHIT",Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, driverViolationRecord.class));
         }
         if(i== R.id.nav_vp){
-            Toast.makeText(this,"penalties SHIT",Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, .class));
         }
         if(i== R.id.nav_inquire){
-            Toast.makeText(this,"INQUIRESHIT",Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, .class));
         }
         if(i== R.id.nav_eh){
-            Toast.makeText(this,"emergency shits",Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, .class));
         }
         return false;
     }

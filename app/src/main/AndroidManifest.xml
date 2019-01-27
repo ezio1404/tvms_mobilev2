@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".driverMain"></activity>
+        <activity android:name=".driverInquire"></activity>
+        <activity android:name=".driverViolationRecord" />
+        <activity android:name=".driverMain" />
         <activity android:name=".enforcerLogin" />
         <activity android:name=".driverLogin" />
         <activity android:name=".MainActivity">
