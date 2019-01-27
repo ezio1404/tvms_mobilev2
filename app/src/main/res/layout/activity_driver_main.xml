@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="176dp"
-    android:background="@color/colorPrimary"
-    android:gravity="bottom"
-    android:padding="16dp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-    >
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher_round" />
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".driverMain">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="8dp"
-        android:text="John Doe"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="166dp"
+            app:srcCompat="@drawable/tvms_logo" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        app:headerLayout="@layout/driver_header"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="12352" />
-</LinearLayout>
+        android:layout_gravity="start"
+        android:background="@color/white"
+        app:menu="@menu/driver_menu" />
+
+
+</android.support.v4.widget.DrawerLayout>
